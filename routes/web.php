@@ -7,5 +7,9 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view ('home');
+    return view ('home', ['title'=> 'Beranda']);
+});
+
+Route::get('/products', function () {
+    return view ('products', ['title'=> 'Produk Kami']);
 });
